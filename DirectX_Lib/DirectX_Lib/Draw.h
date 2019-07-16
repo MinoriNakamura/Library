@@ -5,7 +5,7 @@
 #include <windows.h>
 #include <d3d9.h>
 
-VOID Draw(float x, float y, float z, float rhw, DWORD color, float tu, float tv, float width, float height, float tu_width, float tv_height, int texture);
+VOID Draw(float x, float y, float z, float rhw, DWORD color, float tu, float tv, float width, float height, float tu_width, float tv_height, int texture_number);
 
 struct CUSTOMVERTEX {
 	float	x, y, z;	// 頂点座標
@@ -14,10 +14,9 @@ struct CUSTOMVERTEX {
 	float	tu, tv;	//　テクスチャ座標
 };
 
-class DirectX {
+class Texture {
 public:
-	LPDIRECT3DDEVICE9 pD3Device;
-	LPDIRECT3DTEXTURE9 pTexture[256];
+	LPDIRECT3DTEXTURE9 pTexture;
 };
 
 

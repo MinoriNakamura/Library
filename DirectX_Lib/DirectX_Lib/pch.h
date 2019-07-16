@@ -9,5 +9,6 @@
 
 // プリコンパイルするヘッダーをここに追加します
 #include "Draw.h"
-
+#include "InitDirectX.h"
+#include "DirectX.h"
 #endif //PCH_H
